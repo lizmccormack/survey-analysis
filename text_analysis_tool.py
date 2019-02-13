@@ -1,22 +1,30 @@
 # -*- coding: utf-8 -*-
 
+import string
+import nltk
 import pandas as pd
 from textblob import TextBlob
 import matplotlib.pyplot as plt
-import string
-import nltk
 from wordcloud import WordCloud, STOPWORDS
 
 """
-This script uses user entered key words to analyze word frequency and produce word
-frequency graph and word cloud.
+This script uses NLP tools to analyze text based on specific inputs from the user
+in the following steps:
+1. Find word frequency of all words in text, and outputs them in a table and bar
+graph
 
-required input: CSV file with a column name as first row
-required input: words to analyze
+input: CSV file with a column name as first row
+output: bar graph and data frame with words and word count
+
+2.user entered exploratory key words to analyze specific word frequency and produce word
+frequency graph, word cloud, polarity and subjectivity, and output results in csv file.
+
+input: user words
+output: bar graph, wordcloud, csv with word frequency, and polarity/subjectivity values
 """
 
 # read text data CSV
-df = pd.read_csv('survey_sample.csv', sep=',', nrows=14000, encoding='latin-1')
+df = pd.read_csv('text_data.csv', sep=',', nrows=14000, encoding='latin-1')
 
 # find word frequency
 top_N = 10
