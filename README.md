@@ -1,6 +1,9 @@
 # Text Analysis Tool 
 
-This tool preforms preliminary data analysis and visualization to understand trends and information from text. Including the following: 
+This tool preforms preliminary data analysis and visualization to understand trends and information from text. This tool was orginally created to analyze survey data, but could be used to analyze other text such as tweets. 
+
+The script includes the following: 
+
 * general frequency word count 
 * specific word search/count
 * bar graphs of word counts 
@@ -14,11 +17,19 @@ This tool requires a data import of strings and importing specific libraries.
 
 1. set up libraries to run script 
 
+install pandas
+
 `pip install pandas` 
+
+install textblob
+
 `pip install textblob`
+
+install matplotlib
+
 `pip install matplotlib` 
 
-2. create a CSV file with text - use template.csv in this repository 
+2. add to text_data.csv CSV file in this repository with text to analyze 
 
 3. Run command from terminal 
 
