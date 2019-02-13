@@ -15,8 +15,9 @@ The script includes the following:
 
 This tool requires a data import of strings and importing specific libraries. 
 
-1. set up libraries to run script 
+1. Set up libraries  
 
+```
 install pandas
 
 `pip install pandas` 
@@ -28,8 +29,9 @@ install textblob
 install matplotlib
 
 `pip install matplotlib` 
+```
 
-2. add to text_data.csv CSV file in this repository with text to analyze 
+2. Add text to analyze to text_data.csv CSV file in this repository
 
 3. Run command from terminal 
 
