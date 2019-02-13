@@ -17,19 +17,19 @@ This tool requires a data import of strings and importing specific libraries.
 
 1. Set up libraries  
 
-```
-install pandas
+
+*install pandas*
 
 `pip install pandas` 
 
-install textblob
+*install textblob*
 
 `pip install textblob`
 
-install matplotlib
+*install matplotlib*
 
 `pip install matplotlib` 
-```
+
 
 2. Add text to analyze to text_data.csv CSV file in this repository
 
